@@ -1,0 +1,14 @@
+.send-message {
+
+  &__title {
+    @include poppins;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #fff;
+  }
+
+  &__form {
+    margin-top: 48px;
+  }
+}

@@ -1,0 +1,58 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  @include white-rounded(16px);
+  box-shadow: 0px 9px 18px rgba(37, 41, 49, 0.03);
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 24px;
+    background-color: $mainBlueOpacity22;
+    border-radius: 23px;
+
+    & > span {
+      @include poppins;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      color: $mainBlue;
+      text-transform: uppercase;
+    }
+  }
+
+  &__description {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: $lightGrey;
+  }
+
+  &__learn-more {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $mainBlue;
+  }
+
+  &__learn-more-link {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: $darkBlue2;
+  }
+}

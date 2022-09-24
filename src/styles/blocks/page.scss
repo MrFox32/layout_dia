@@ -1,0 +1,25 @@
+.page {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #f2f6fA;
+
+  &__section {
+    margin-top: 120px;
+    padding: 0 20px;
+
+    &--our-expertise {
+      @include white-rounded();
+    }
+
+    &--vision-passion-results {
+      @include white-rounded(0);
+    }
+  }
+
+  &__footer {
+    margin-top: 120px;
+    padding: 72px 20px 80px;
+    background-color: $black;
+    border-radius: 30px 30px 0 0;
+  }
+}

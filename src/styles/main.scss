@@ -1,7 +1,23 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_reset.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/slider.scss";
+@import "blocks/main-content.scss";
+@import "blocks/footer.scss";
+@import "blocks/title.scss";
+@import "blocks/about-us.scss";
+@import "blocks/our-expertise.scss";
+@import "blocks/services.scss";
+@import "blocks/service-card.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/testimonials-card.scss";
+@import "blocks/vision-passion-results.scss";
+@import "blocks/send-message.scss";
+@import "blocks/message-form.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/air-navigation.scss";

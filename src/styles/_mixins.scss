@@ -1,0 +1,8 @@
+@mixin poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin white-rounded($borderRadius: 30px) {
+  background-color: #fff;
+  border-radius: $borderRadius;
+}
