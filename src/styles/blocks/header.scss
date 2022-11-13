@@ -4,7 +4,6 @@
   background: $black;
   border-radius: 0 0 30px 30px;
 
-
   @include desktop1024 {
     justify-content: center;
     align-items: center;
@@ -26,7 +25,7 @@
       }
     }
 
-    &--header-text{
+    &--header-text {
       margin-top: 20px;
 
       @include desktop1024 {
@@ -55,7 +54,7 @@
       }
     }
 
-    &--slider{
+    &--slider {
       padding: 0;
 
       @include desktop1024 {

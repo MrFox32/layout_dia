@@ -66,7 +66,13 @@
 
   &__social-icon {
     &:hover {
-      filter: invert(70%) sepia(100%) saturate(3361%) hue-rotate(216deg) brightness(100%) contrast(103%);
+      filter: 
+        invert(70%)
+        sepia(100%)
+        saturate(3361%)
+        hue-rotate(216deg)
+        brightness(100%)
+        contrast(103%);
     }
   }
 }

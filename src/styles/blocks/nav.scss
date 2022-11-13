@@ -31,7 +31,6 @@
     height: 100vh;
     background-color: $black;
 
-
     @include desktop1024 {
       position: static;
       flex-direction: row;
@@ -49,7 +48,7 @@
       margin-top: 0;
     }
 
-    &:not(:first-child){
+    &:not(:first-child) {
       @include desktop1024 {
         margin-left: 48px;
       }
