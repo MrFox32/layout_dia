@@ -1,5 +1,13 @@
 .vision-passion-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 72px 0;
+
+  @include tablet {
+    padding: 200px 41px;
+  }
+
   &__title {
     @include poppins;
     font-weight: 600;
@@ -16,23 +24,9 @@
     line-height: 150%;
     text-align: center;
     color: $lightGrey;
-  }
 
-  &__button {
-    display: flex;
-    justify-content: center;
-    margin-top: 56px;
-    width: 100%;
-    background: $mainBlue;
-    border-radius: 8px;
-  }
-
-  &__link {
-    padding: 17px 116px;
-    @include poppins;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #fff;
+    @include desktop1024 {
+      width: 720px;
+    }
   }
 }

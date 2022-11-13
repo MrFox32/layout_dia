@@ -8,72 +8,136 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__item">
-        <div class="header__top">
-          <div class="logo">
-            <img
-              class="logo__image"
-              src="../src/images/logo/Air-logo.svg"
-              alt="Logo"
-            >
-          </div>
-          <nav class="nav">
-            <div class="nav__menu">
+      <div class="header__item header__item--header-top">
+        <div class="header__top-wrapper">
+          <div class="header__top">
+            <div class="logo">
               <img
-                class="Menu"
-                src="../src/images/Menu-icon.svg"
-                alt="Menu"
+                class="logo__image"
+                src="images/logo/Air-logo.svg"
+                alt="Logo"
               >
             </div>
-          </nav>
-          <div class="header__hire-us">
-            <a href="#" class="header__hire-us-link">
-              Hire us
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__item">
-        <h1 class="title">
-          Strategic Agency
-        </h1>
-        <p class="header__subtitle-desc">
-          We believe in the power of bold ideas
-          that can solve business challenges.
-        </p>
-      </div>
-      <div class="header__item header__item--learn-more">
-        <div class="header__learn-more">
-          <a href="#" class="header__learn-more-link">
-            Learn more
-          </a>
-        </div>
-      </div>
-      <div class="header__item">
-        <div class="slider">
-          <div class="slider__controls">
-            <div class="slider__control slider__control--previous">
-              <a href="#">
-                <
-              </a>
-            </div>
-            <div class="slider__control slider__control--next">
-              <a href="#">
+            <div class="header__nav">
+              <a href="#nav-menu">
+                <img
+                  class="header__nav-opener"
+                  src="images/Menu-icon.svg"
+                  alt="Menu"
                 >
               </a>
+              <nav class="nav" id="nav">
+                <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#about-us">About us</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#services">Services</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#footer">Contact Us</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#">Back</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="header__hire-us">
+              <a href="#footer" class="header__hire-us-link">
+                Hire us
+              </a>
             </div>
           </div>
-          <h3 class="slider__title">
-            Intro
-          </h3>
-          <p class="slider__info">
-            By the same illusion which lifts the horizon.
-          </p>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__description-wrapper">
+          <div class="header__item header__item--header-text">
+            <div class="header__title">
+              <h1 class="title">
+                Strategic Agency
+              </h1>
+            </div>
+            <p class="header__subtitle-desc">
+              We believe in the power of bold ideas
+              that can solve business challenges.
+            </p>
+          </div>
+          <div class="header__item header__item--learn-more">
+            <div class="air-button__button air-button__button--learn-more">
+              <a href="#about-us" class="air-button__link air-button__link--learn-more">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__item header__item--slider">
+          <div class="slider">
+            <div class="slider__slides" id="slider">
+              <img
+                src="images/slider/1.jpg"
+                alt="slider image"
+                class="slider__image"
+                id="slide-1"
+              >
+              <img
+                src="images/slider/2.jpg"
+                alt="slider image"
+                class="slider__image"
+                id="slide-2"
+              >
+              <img
+                src="images/slider/3.jpg"
+                alt="slider image"
+                class="slider__image"
+                id="slide-3"
+              >
+            </div>
+            <div class="slider__container">
+              <div class="slider__controls">
+                <div class="slider__control slider__control--previous">
+                  <a id="slider-previous-link">
+                    <img
+                      src="images/slider/arrow-left.svg"
+                      alt="previous"
+                      class="slider__control-image"
+                    >
+                  </a>
+                </div>
+                <div class="slider__control slider__control--next">
+                  <a id="slider-next-link">
+                    <img
+                      src="images/slider/arrow-right.svg"
+                      alt="next"
+                      class="slider__control-image"
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="slider__text">
+                <h3 class="slider__title">
+                  Intro
+                </h3>
+                <p class="slider__info">
+                  By the same illusion which lifts the horizon.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main class="main-content">
-      <section class="page__section page__section--about-us">
+      <section
+        class="page__section page__section--about-us"
+        id="about-us"
+      >
         <div class="about-us">
           <h2 class="about-us__title">
             Who we are
@@ -91,84 +155,92 @@
           </p>
         </div>
       </section>
-      <section class="
-        page__section
-        page__section--our-expertise
+      <section
+        id="our-expertise"
+        class="
+          page__section
+          page__section--our-expertise
       ">
         <div class="our-expertise">
           <h2 class="our-expertise__title">
             Our expertise
           </h2>
-          <div class="our-expertise__item">
-            <img
-              src="images/our-expertise/branding.png"
-              alt="Branding"
-              class="our-expertise__photo"
-            >
-            <h3 class="our-expertise__subtitle">
-              Branding
-            </h3>
-            <p class="our-expertise__description">
-              We create additional value for companies,
-              products, services as well as verbal and
-              visual ways to deliver it to the audience.
-            </p>
-          </div>
-          <div class="our-expertise__item">
-            <img
-              src="images/our-expertise/Communication.png"
-              alt="Communication"
-              class="our-expertise__photo"
-            >
-            <h3 class="our-expertise__subtitle">
-              Communication
-            </h3>
-            <p class="our-expertise__description">
-              We strive to create communications
-              that can increase media performance.
-              We use everything —
-              words, meanings, stories, art, movies.
-            </p>
-          </div>
-          <div class="our-expertise__item">
-            <img
-              src="images/our-expertise/Strategy.png"
-              alt="Strategy"
-              class="our-expertise__photo"
-            >
-            <h3 class="our-expertise__subtitle">
-              Strategy
-            </h3>
-            <p class="our-expertise__description">
-              We create business growth strategies,
-              from the moment of its birth to the achievement
-              of the necessary business indicators.
-            </p>
+          <div class="our-expertise__items">
+            <div class="our-expertise__item">
+              <img
+                src="images/our-expertise/branding.png"
+                alt="Branding"
+                class="our-expertise__photo"
+              >
+              <h3 class="our-expertise__subtitle">
+                Branding
+              </h3>
+              <p class="our-expertise__description">
+                We create additional value for companies,
+                products, services as well as verbal and
+                visual ways to deliver it to the audience.
+              </p>
+            </div>
+            <div class="our-expertise__item">
+              <img
+                src="images/our-expertise/Communication.png"
+                alt="Communication"
+                class="our-expertise__photo"
+              >
+              <h3 class="our-expertise__subtitle">
+                Communication
+              </h3>
+              <p class="our-expertise__description">
+                We strive to create communications
+                that can increase media performance.
+                We use everything —
+                words, meanings, stories, art, movies.
+              </p>
+            </div>
+            <div class="our-expertise__item">
+              <img
+                src="images/our-expertise/Strategy.png"
+                alt="Strategy"
+                class="our-expertise__photo"
+              >
+              <h3 class="our-expertise__subtitle">
+                Strategy
+              </h3>
+              <p class="our-expertise__description">
+                We create business growth strategies,
+                from the moment of its birth to the achievement
+                of the necessary business indicators.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="page__section  page__section--services">
+      <section
+        id="services"
+        class="page__section  page__section--services">
         <div class="services">
-          <h2 class="services__suptitle">
-            Services
-          </h2>
-          <h3 class="services__title">
-            Air is a full service creative agency
-          </h3>
-          <div class="services__description">
-            <p>
-              Deep analytics, strong strategy
-              and bright creative ideas.
-            </p>
-            <br>
-            <p>
-              We are sure that first-rate
-              job is possible only if all
-              three components are united.
-            </p>
+          <div class="services__text">
+            <h2 class="services__suptitle">
+              Services
+            </h2>
+            <h3 class="services__title">
+              Air is a full service creative agency
+            </h3>
+            <div class="services__description">
+              <p>
+                Deep analytics, strong strategy
+                and bright creative ideas.
+              </p>
+              <br>
+              <p>
+                We are sure that first-rate
+                job is possible only if all
+                three components are united.
+              </p>
+            </div>
           </div>
 
-          <div class="services__item">
+          <div class="services__item services__item--1">
             <div class="service-card">
               <div class="service-card__number">
                 <span>001</span>
@@ -181,16 +253,18 @@
               </p>
               <div class="service-card__learn-more">
                 <div class="service-card__arrow">
-                  <img src="images/Arrow.svg" alt="arrow">
+                  <a href="#footer" class="service-card__arrow-link">
+                    <img src="images/Arrow.svg" alt="arrow">
+                  </a>
                 </div>
-                <a class="service-card__learn-more-link">
+                <a href="#footer" class="service-card__learn-more-link">
                   Learn more
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="services__item">
+          <div class="services__item services__item--2">
             <div class="service-card service-card--service-service-card">
               <div class="service-card__number">
                 <span>002</span>
@@ -203,16 +277,18 @@
               </p>
               <div class="service-card__learn-more">
                 <div class="service-card__arrow">
-                  <img src="images/Arrow.svg" alt="arrow">
+                  <a href="#footer" class="service-card__arrow-link">
+                    <img src="images/Arrow.svg" alt="arrow">
+                  </a>
                 </div>
-                <a class="service-card__learn-more-link">
+                <a href="#footer" class="service-card__learn-more-link">
                   Learn more
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="services__item">
+          <div class="services__item services__item--3">
             <div class="service-card service-card--service-service-card">
               <div class="service-card__number">
                 <span>003</span>
@@ -225,16 +301,18 @@
               </p>
               <div class="service-card__learn-more">
                 <div class="service-card__arrow">
-                  <img src="images/Arrow.svg" alt="arrow">
+                  <a href="#footer" class="service-card__arrow-link">
+                    <img src="images/Arrow.svg" alt="arrow">
+                  </a>
                 </div>
-                <a class="service-card__learn-more-link">
+                <a href="#footer" class="service-card__learn-more-link">
                   Learn more
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="services__item">
+          <div class="services__item services__item--4">
             <div class="service-card service-card--service-service-card">
               <div class="service-card__number">
                 <span>004</span>
@@ -247,9 +325,11 @@
               </p>
               <div class="service-card__learn-more">
                 <div class="service-card__arrow">
-                  <img src="images/Arrow.svg" alt="arrow">
+                  <a href="#footer" class="service-card__arrow-link">
+                    <img src="images/Arrow.svg" alt="arrow">
+                  </a>
                 </div>
-                <a href="#" class="service-card__learn-more-link">
+                <a href="#footer" class="service-card__learn-more-link">
                   Learn more
                 </a>
               </div>
@@ -257,7 +337,9 @@
           </div>
         </div>
       </section>
-      <section class="page__section">
+      <section
+        id="testimonials"
+        class="page__section page__section--testimonials">
         <div class="testimonials">
           <h2 class="testimonials__suptitle">
             Testimonials
@@ -265,93 +347,97 @@
           <h3 class="testimonials__title">
             What people say
           </h3>
-          <div class="testimonials__item">
-            <div class="testimonials-card">
-              <div class="testimonials-card__image-wrapper">
-                <img
-                  src="images/testimonials/1.png"
-                  alt="Tal Gilad"
-                  class="testimonials-card__photo"
-                >
+          <div class="testimonials__wrapper">
+            <div class="testimonials__items">
+              <div class="testimonials__item">
+                <div class="testimonials-card">
+                  <div class="testimonials-card__image-wrapper">
+                    <img
+                      src="images/testimonials/1.png"
+                      alt="Tal Gilad"
+                      class="testimonials-card__photo"
+                    >
+                  </div>
+                  <img
+                    src="images/testimonials/quotes.svg"
+                    alt="quotes"
+                    class="testimonials-card__quotes"
+                  >
+                  <p class="testimonials-card__testimonial">
+                    AIR’s ideas are refreshing and
+                    out of the box. Authentic team
+                    that focuses on the important path
+                    of the brand.
+                  </p>
+                  <p class="testimonials-card__name">
+                    Tal Gilad
+                  </p>
+                  <p class="testimonials-card__company">
+                    Teach for America
+                  </p>
+                </div>
               </div>
-              <img
-                src="images/testimonials/quotes.svg"
-                alt="quotes"
-                class="testimonials-card__quotes"
-              >
-              <p class="testimonials-card__testimonial">
-                AIR’s ideas are refreshing and
-                out of the box. Authentic team
-                that focuses on the important path
-                of the brand.
-              </p>
-              <p class="testimonials-card__name">
-                Tal Gilad
-              </p>
-              <p class="testimonials-card__company">
-                Teach for America
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonials__item">
-            <div class="testimonials-card">
-              <div class="testimonials-card__image-wrapper">
-                <img
-                  src="images/testimonials/2.png"
-                  alt="Tal Gilad"
-                  class="testimonials-card__photo"
-                >
+              <div class="testimonials__item">
+                <div class="testimonials-card">
+                  <div class="testimonials-card__image-wrapper">
+                    <img
+                      src="images/testimonials/2.png"
+                      alt="Tal Gilad"
+                      class="testimonials-card__photo"
+                    >
+                  </div>
+                  <img
+                    src="images/testimonials/quotes.svg"
+                    alt="quotes"
+                    class="testimonials-card__quotes"
+                  >
+                  <p class="testimonials-card__testimonial">
+                    AIR is an exceptional agency that
+                    leads with creative talent, first-
+                    class account servicing.
+                  </p>
+                  <p class="testimonials-card__name">
+                    Azadeh Hawkins
+                  </p>
+                  <p class="testimonials-card__company">
+                    Hawkins Consulting
+                  </p>
+                </div>
               </div>
-              <img
-                src="images/testimonials/quotes.svg"
-                alt="quotes"
-                class="testimonials-card__quotes"
-              >
-              <p class="testimonials-card__testimonial">
-                AIR is an exceptional agency that
-                leads with creative talent, first-
-                class account servicing.
-              </p>
-              <p class="testimonials-card__name">
-                Azadeh Hawkins
-              </p>
-              <p class="testimonials-card__company">
-                Hawkins Consulting
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonials__item">
-            <div class="testimonials-card">
-              <div class="testimonials-card__image-wrapper">
-                <img
-                  src="images/testimonials/3.png"
-                  alt="Tal Gilad"
-                  class="testimonials-card__photo"
-                >
+              <div class="testimonials__item">
+                <div class="testimonials-card">
+                  <div class="testimonials-card__image-wrapper">
+                    <img
+                      src="images/testimonials/3.png"
+                      alt="Tal Gilad"
+                      class="testimonials-card__photo"
+                    >
+                  </div>
+                  <img
+                    src="images/testimonials/quotes.svg"
+                    alt="quotes"
+                    class="testimonials-card__quotes"
+                  >
+                  <p class="testimonials-card__testimonial">
+                    AIR raises the agency bar to
+                    stratospheric heights on both
+                    creative output and client service.
+                  </p>
+                  <p class="testimonials-card__name">
+                    Michel Grover
+                  </p>
+                  <p class="testimonials-card__company">
+                    Hulu
+                  </p>
+                </div>
               </div>
-              <img
-                src="images/testimonials/quotes.svg"
-                alt="quotes"
-                class="testimonials-card__quotes"
-              >
-              <p class="testimonials-card__testimonial">
-                AIR raises the agency bar to
-                stratospheric heights on both
-                creative output and client service.
-              </p>
-              <p class="testimonials-card__name">
-                Michel Grover
-              </p>
-              <p class="testimonials-card__company">
-                Hulu
-              </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="page__section page__section--vision-passion-results">
+      <section
+        id="vision-passion-results"
+        class="page__section page__section--vision-passion-results">
         <div class="vision-passion-results">
           <h2 class="vision-passion-results__title">
             Vision, Passion, Results
@@ -361,17 +447,17 @@
             job is possible only if all
             three components are united.
           </p>
-          <div class="vision-passion-results__button">
+          <div class="air-button__button air-button__button--vision-passion">
             <a
               href="#"
-              class="vision-passion-results__link">
+              class="air-button__link">
               Apply
             </a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="page__footer">
         <div class="footer__item footer__item--send-message">
           <div class="send-message">
@@ -410,7 +496,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__item">
+        <div class="footer__item footer__item--contact-us">
           <div class="contact-us">
             <h2 class="contact-us__title">
               Contact us
@@ -426,6 +512,7 @@
               <a
                 class="contact-us__address"
                 href="https://goo.gl/maps/ogJ8FFJyU3s1ELSJ7"
+                target="_blank"
               >
                 2905 West Drive, Buffalo Grove
               </a>
@@ -435,21 +522,33 @@
                 our socials
               </h3>
               <div class="contact-us__social-icons">
-                <a href="#">
-                  <img src="images/contact-us/Facebook.svg" alt="facebook">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img
+                    src="images/contact-us/Facebook.svg"
+                    alt="facebook"
+                    class="contact-us__social-icon"
+                  >
                 </a>
-                <a href="#">
-                  <img src="images/contact-us/Twitter.svg" alt="twitter">
+                <a href="https://twitter.com/" target="_blank">
+                  <img
+                    src="images/contact-us/Twitter.svg"
+                    alt="twitter"
+                    class="contact-us__social-icon"
+                  >
                 </a>
-                <a href="#">
-                  <img src="images/contact-us/Instagram.svg" alt="instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    src="images/contact-us/Instagram.svg"
+                    alt="instagram"
+                    class="contact-us__social-icon"
+                  >
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="footer__item">
+        <div class="footer__item footer__item--air-navigation">
           <div class="air-navigation">
             <h2 class="air-navigation__title">
               <div class="logo">
@@ -459,24 +558,24 @@
                   alt="Logo"
                 >
               </div>
-              <ul class="air-navigation__list">
-                <li class="air-navigation__list-item">
-                  About us
-                </li>
-                <li class="air-navigation__list-item">
-                  Home
-                </li>
-                <li class="air-navigation__list-item">
-                  Work
-                </li>
-                <li class="air-navigation__list-item">
-                  Services
-                </li>
-                <li class="air-navigation__list-item">
-                  Contact Us
-                </li>
-              </ul>
             </h2>
+            <ul class="air-navigation__list">
+              <li class="air-navigation__list-item">
+                <a href="#about-us">About us</a>
+              </li>
+              <li class="air-navigation__list-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="air-navigation__list-item">
+                <a href="#testimonials">Work</a>
+              </li>
+              <li class="air-navigation__list-item">
+                <a href="#services">Services</a>
+              </li>
+              <li class="air-navigation__list-item">
+                <a href="#footer">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

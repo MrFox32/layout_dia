@@ -1,15 +1,18 @@
 .message-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  @include tablet {
+    align-items: flex-start;
+  }
 
   &__input {
     box-sizing: border-box;
     margin-top: 23px;
     width: 100%;
     padding-bottom: 17px;
-    padding-top:17px ;
+    padding-top: 17px;
     border-bottom: 1px solid #fffb;
     @include poppins;
     font-weight: 600;
@@ -18,15 +21,10 @@
     color: #fff;
     background-color: $transparent;
     outline: none;
-    transition: 150ms;
-
-    &:hover {
-      width: calc(100% + 2px);
-    }
+    transition: border 150ms;
 
     &:focus {
       border-bottom: 2px solid $mainBlue2;
-      width: calc(100% + 4px);
     }
 
     &::placeholder {
@@ -39,6 +37,19 @@
     &--email {
       margin-top: 31px;
     }
+
+    @include tablet {
+      margin-top: 31px;
+      width: 362px;
+    }
+
+    @include desktop1024 {
+      width: 370px;
+    }
+
+    @include desktop1600 {
+      width: 460px;
+    }
   }
 
   &__submit-button {
@@ -46,12 +57,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 280px;
     background-color: $mainBlue3;
     border-radius: 8px;
 
-    &:hover {
-      width: calc(100% + 2px);
+    @include tablet {
+      margin-top: 80px;
+      width: 264px;
     }
   }
 

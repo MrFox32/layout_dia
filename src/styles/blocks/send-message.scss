@@ -10,5 +10,9 @@
 
   &__form {
     margin-top: 48px;
+
+    @include tablet {
+      margin-top: 56px;
+    }
   }
 }

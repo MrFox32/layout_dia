@@ -1,8 +1,40 @@
 @mixin poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin white-rounded($borderRadius: 30px) {
   background-color: #fff;
   border-radius: $borderRadius;
 }
+
+@mixin tablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin desktop1024 {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop1600 {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desktop2560 {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  min-width: 916px;
+  @include desktop1600 {
+    width: 1150px;
+  }
+}
+

@@ -19,5 +19,14 @@
     line-height: 150%;
     color: $lightGrey;
     text-align: center;
+
+    @include tablet {
+      margin-top: 16px;
+      font-size: 24px;
+    }
+
+    @include desktop1024 {
+      width: 716px;
+    }
   }
 }

@@ -1,0 +1,42 @@
+.air-button {
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 56px;
+    width: 280px;
+    height: 50px;
+    background-color: $mainBlue;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 150ms;
+
+    @include tablet {
+      width: 265px;
+    }
+
+    &:hover {
+      background-color: $mainBlue3;
+    }
+  }
+
+  &__link {
+    padding: 17px 116px;
+    @include poppins;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+
+    @include tablet {
+      padding: 13px 110px;
+    }
+
+    &--learn-more {
+      @include tablet {
+        padding: 13px 88px;
+      }
+    }
+  }
+}

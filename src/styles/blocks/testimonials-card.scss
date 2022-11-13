@@ -5,7 +5,11 @@
   align-items: center;
   padding: 32px;
   @include white-rounded(16px);
-  box-shadow: 0px 9px 18px rgba(37, 41, 49, 0.03);
+  box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+
+  @include desktop1024 {
+    height: 456px;
+  }
 
   &__photo {
     position: relative;
@@ -14,6 +18,12 @@
     height: 110px;
     border-radius: 50%;
     z-index: 2;
+
+    @include tablet {
+      width: 140px;
+      height: 140px;
+    }
+
   }
 
   &__image-wrapper {
@@ -29,6 +39,13 @@
       border-radius: 12px;
       transform: rotate(-60deg);
       z-index: 1;
+
+      @include tablet {
+        top: 70px;
+        left: -50px;
+        width: 140px;
+        height: 56px;
+      }
     }
 
     &::after {
@@ -42,11 +59,22 @@
       border-radius: 12px;
       transform: rotate(-60deg);
       z-index: 1;
+
+      @include tablet {
+        top: 163px;
+        left: 50px;
+        width: 140px;
+        height: 56px;
+      }
     }
   }
 
   &__quotes {
     margin-top: 70px;
+
+    @include tablet {
+      margin-top: 82px;
+    }
   }
 
   &__testimonial {
@@ -56,6 +84,14 @@
     line-height: 150%;
     text-align: center;
     color: $lightGrey;
+
+    @include tablet {
+      width: 362px;
+    }
+
+    @include desktop1024 {
+      width: 196px;
+    }
   }
 
   &__name {

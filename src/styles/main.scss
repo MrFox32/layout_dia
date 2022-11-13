@@ -3,11 +3,11 @@
 @import "_reset.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
+@import "_animations.scss";
 
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/slider.scss";
-@import "blocks/main-content.scss";
 @import "blocks/footer.scss";
 @import "blocks/title.scss";
 @import "blocks/about-us.scss";
@@ -21,3 +21,5 @@
 @import "blocks/message-form.scss";
 @import "blocks/contact-us.scss";
 @import "blocks/air-navigation.scss";
+@import "blocks/nav.scss";
+@import "blocks/air-button.scss";

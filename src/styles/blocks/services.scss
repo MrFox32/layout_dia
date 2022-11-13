@@ -1,5 +1,22 @@
 .services {
 
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+  }
+
+  @include desktop1024 {
+    box-sizing: border-box;
+    grid-template-columns: 292px 1fr 214px 20px 214px;
+    @include desktop-width;
+  }
+
+  @include desktop1600 {
+    grid-template-columns: 362px 1fr 264px 30px 264px;
+  }
+
   &__suptitle {
     @include poppins;
     font-weight: 700;
@@ -8,6 +25,10 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: $lightGrey2;
+
+    @include tablet {
+      grid-column: 1;
+    }
   }
 
   &__title {
@@ -17,6 +38,10 @@
     font-size: 32px;
     line-height: 130%;
     color: $darkBlue;
+
+    @include tablet {
+      grid-column: 1;
+    }
   }
 
   &__description {
@@ -25,10 +50,70 @@
     font-size: 14px;
     line-height: 150%;
     color: $lightGrey;
+
+    @include tablet {
+      max-width: 254px;
+      grid-column: 1;
+    }
   }
 
   &__item {
     margin-top: 24px;
-  }
+    min-width: 264px;
+    align-self: center;
 
+    @include desktop1024 {
+      min-width: 214px;
+    }
+
+    &--1 {
+      @include tablet {
+        margin-top: 56px;
+        grid-column: 1;
+      }
+
+      @include desktop1024 {
+        margin-top: 0;
+        grid-column: 3;
+      }
+    }
+
+    &--2 {
+      @include tablet {
+        margin-top: 56px;
+        grid-column: 3;
+        transform: translate(0 , -50%);
+      }
+
+      @include desktop1024 {
+        margin-top: 0;
+        grid-column: 5;
+      }
+    }
+
+    &--3 {
+      @include tablet {
+        margin-top: 30px;
+        grid-column: 1;
+      }
+
+      @include desktop1024 {
+        margin-top: 20px;
+        grid-column: 3;
+      }
+    }
+
+    &--4 {
+      @include tablet {
+        margin-top: 30px;
+        grid-column: 3;
+        transform: translate(0 , -50%);
+      }
+
+      @include desktop1024 {
+        margin-top: 20px;
+        grid-column: 5;
+      }
+    }
+  }
 }

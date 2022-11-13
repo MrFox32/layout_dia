@@ -4,6 +4,14 @@
   align-items: center;
   padding: 72px 0;
 
+  @include tablet {
+    padding: 128px 0;
+  }
+
+  @include desktop1024 {
+    @include desktop-width;
+  }
+
   &__title {
     @include poppins;
     color: $darkBlue;
@@ -11,13 +19,33 @@
     font-size: 44px;
     line-height: 120%;
     text-align: center;
+
+    @include tablet {
+      font-size: 52px;
+    }
+  }
+
+  &__items {
+    @include desktop1024 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &__item {
-    padding-top: 56px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      margin-top: 72px;
+    }
+
+    @include desktop1024 {
+      max-width: 214px;
+    }
   }
 
   &__photo {
@@ -40,5 +68,9 @@
     font-size: 14px;
     line-height: 150%;
     color: $lightGrey;
+
+    @include tablet {
+      max-width: 362px;
+    }
   }
 }
